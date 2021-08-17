@@ -8,6 +8,7 @@ export default defineComponent({
     const loader = new GLTFLoader()
     loader.load(this.src, (gltf) => {
       this.onLoad(gltf.scene)
+      console.log("Console message")
     }, this.onProgress, this.onError)
   },
 })
